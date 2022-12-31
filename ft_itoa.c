@@ -6,12 +6,11 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:24:59 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/19 17:23:40 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/12/31 18:56:22 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 
 // The function takes an integer and returns a pointer
 // to a first element of an array 

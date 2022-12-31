@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2022/10/31 10:39:48 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/12/31 18:17:26 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,9 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+void	to_lower_case(char *str);
+int		ft_is_float(char *str);
+double	ft_atof(const char *str);
+char	*ft_strjoin_free_1(char *s1, char *s2);
 
 #endif

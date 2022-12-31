@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_str_to_lower.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/16 13:20:17 by jergashe          #+#    #+#             */
-/*   Updated: 2022/12/31 18:57:33 by jergashe         ###   ########.fr       */
+/*   Created: 2022/12/31 18:05:04 by jergashe          #+#    #+#             */
+/*   Updated: 2022/12/31 18:05:26 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-// The function returns a pointer to a
-// char "c" if it exists inside string "s"
-// Otherwise returns NULL
-char	*ft_strrchr(const char *s, int c)
+void	to_lower_case(char *str)
 {
-	int		count;
-	char	ch;
-	char	*result;
+	int	i;
 
-	result = NULL;
-	ch = c;
-	count = 0;
-	while (s[count] != '\0')
+	i = 0;
+	while (str[i] != '\0')
 	{
-		if (s[count] == ch)
-			result = (char *)&s[count];
-		count++;
+		if (str[i] >= 'A' && str[i] <= 'Z')
+		{
+			str[i] = str[i] + ('a' - 'A');
+		}
+	i++;
 	}
-	if (s[count] == ch)
-		result = (char *)&s[count];
-	return (result);
 }

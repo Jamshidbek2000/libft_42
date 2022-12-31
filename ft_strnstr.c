@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 12:47:40 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/20 11:24:26 by jergashe         ###   ########.fr       */
+/*   Updated: 2022/12/31 18:57:14 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,31 +15,27 @@
 // The function located string "needle"
 // inside string "haystack"
 // It compares at most "len" chars
-char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t n)
 {
 	size_t	i;
-	size_t	len_haystack;
-	size_t	len_needle;
 	size_t	j;
+	size_t	start;
 
-	if (!haystack && len == 0)
-		return (NULL);
 	i = 0;
-	len_haystack = ft_strlen(haystack);
-	len_needle = ft_strlen(needle);
-	if (needle[0] == '\0')
+	j = 0;
+	if (!*needle)
 		return ((char *)haystack);
-	while (i < len_haystack && i < len)
+	while (haystack[i] && i < n)
 	{
-		j = 0;
-		if (haystack[i] == needle[j])
+		if (needle[j] == haystack[i])
 		{
-			while (haystack[i + j] == needle[j] && i + j < len
-				&& haystack[i + j] != '\0' && needle[j] != '\0')
+			start = i;
+			while (i + j < n && needle[j] && needle[j] == haystack[i + j])
 				j++;
-			if (j == len_needle)
-				return ((char *)(haystack + i));
+			if (needle[j] == '\0')
+				return ((char *)haystack + start);
 		}
+		j = 0;
 		i++;
 	}
 	return (NULL);

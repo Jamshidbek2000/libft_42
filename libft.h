@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2022/12/31 18:17:26 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/07 18:13:52 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,5 +69,6 @@ void	to_lower_case(char *str);
 int		ft_is_float(char *str);
 double	ft_atof(const char *str);
 char	*ft_strjoin_free_1(char *s1, char *s2);
+char	*ft_strndup(const char *s, size_t n);
 
 #endif

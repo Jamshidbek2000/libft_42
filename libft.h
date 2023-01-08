@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2023/01/07 18:13:52 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/08 18:44:27 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,7 @@ int		ft_is_float(char *str);
 double	ft_atof(const char *str);
 char	*ft_strjoin_free_1(char *s1, char *s2);
 char	*ft_strndup(const char *s, size_t n);
+void	ft_print_2d_char_array(char **array_2d);
+void	ft_free_2d_array(void **array_2d);
 
 #endif

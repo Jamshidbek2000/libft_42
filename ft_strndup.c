@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 18:07:21 by jergashe          #+#    #+#             */
-/*   Updated: 2023/01/07 18:12:57 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/11 11:45:33 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strndup(const char *s, size_t n)
 	if (result == NULL)
 		return (NULL);
 	index = 0;
-	while (s[index] != '\0')
+	while (s[index] != '\0' && index < n)
 	{
 		result[index] = s[index];
 		index++;

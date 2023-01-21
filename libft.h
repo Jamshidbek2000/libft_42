@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2023/01/21 08:44:01 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/21 09:54:22 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,6 @@ char	*ft_strndup(const char *s, size_t n);
 void	ft_print_2d_char_array(char **array_2d);
 void	ft_free_2d_array(void **array_2d);
 int		ft_is_space_char(int c);
+long	ft_atol(const char *str);
 
 #endif

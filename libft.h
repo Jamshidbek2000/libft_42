@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2023/01/22 08:05:26 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/22 09:26:34 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,23 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stdarg.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }t_list;
+
+typedef struct t_file_obj
+{
+	int		new_line_index;
+	int		fd;
+}t_file_obj;
 
 size_t	ft_strlen(const char *s);
 int		ft_isprint(int c);
@@ -75,5 +86,23 @@ void	ft_free_2d_array(void **array_2d);
 int		ft_is_space_char(int c);
 long	ft_atol(const char *str);
 int		ft_is_all_digits(char *str);
-
+// PRINTF
+int		ft_printf(const char *input, ...);
+int		ft_print_char(char ch);
+int		ft_print_str(char *str);
+int		ft_print_hex(unsigned int hex, char x_specifier);
+int		ft_print_dec(long number);
+int		ft_print_address(unsigned long long address);
+int		ft_print_unsigned(unsigned int number);
+int		get_len_num(long number);
+int		get_len_hex(unsigned long long hex);
+void	ft_hex_in_action(unsigned long long hex, char x_specifier);
+int		ft_pr_putchar_fd(char c, int fd);
+// GET_NEXT_LINE
+char		*get_next_line(int fd);
+int			containts_new_line(char *str);;
+t_file_obj	*get_t_file_obj(int new_fd);
+size_t		gn_strlen(const char *s);
+char		*gn_strjoin_free_1(char *s1, char *s2);
+char		*ft_strndup2(char *str, int start, int end);
 #endif

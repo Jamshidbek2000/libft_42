@@ -5,7 +5,7 @@
 # delete object files and execuatable (make fclean)
 # compile bonus files (make bonus)
 
-CC=gcc
+CC= cc
 CFLAGS= -Wall -Werror -Wextra
 
 CFILES= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strlen.c ft_memset.c ft_bzero.c \
@@ -14,6 +14,8 @@ CFILES= ft_isalpha.c ft_isdigit.c ft_isalnum.c ft_isascii.c ft_isprint.c ft_strl
 		ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c ft_itoa.c ft_strmapi.c ft_striteri.c ft_putchar_fd.c \
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c ft_str_to_lower.c ft_is_float.c ft_atof.c ft_strjoin_free_1.c \
 		ft_strndup.c ft_print_2d_char_array.c ft_free_2d_array.c ft_is_space_char.c ft_atol.c ft_is_all_digits.c	\
+		ft_get_len_num.c ft_print_address.c ft_print_char.c ft_print_dec.c ft_print_hex.c ft_print_str.c ft_print_unsigned.c \
+		ft_pr_putchar_fd.c ft_printf.c get_next_line.c get_next_line_utils.c \
 
 BONUS= ft_lstadd_back.c ft_lstadd_front.c ft_lstclear.c ft_lstdelone.c \
 		ft_lstiter.c ft_lstlast.c ft_lstmap.c ft_lstnew.c ft_lstsize.c	

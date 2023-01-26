@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 18:13:29 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/19 18:01:08 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/26 08:29:38 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	size_t	size;
 	char	*res;
 	size_t	tmp1;
-	size_t	tmp2;
 
 	if (!s1 || !s2)
 		return (NULL);
@@ -30,7 +29,6 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!res)
 		return (NULL);
 	tmp1 = 0;
-	tmp2 = 0;
 	while (s1[tmp1] != '\0')
 	{
 		res[tmp1] = s1[tmp1];

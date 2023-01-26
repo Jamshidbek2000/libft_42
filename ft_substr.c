@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 14:43:20 by jergashe          #+#    #+#             */
-/*   Updated: 2022/11/19 19:29:52 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/26 08:28:40 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	size;
 	size_t	len_s;
 
-	if (!s || len < 0)
+	if (!s || len == 0)
 		return (NULL);
 	len_s = ft_strlen(s);
 	if (len_s <= start)

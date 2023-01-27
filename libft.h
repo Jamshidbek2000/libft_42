@@ -6,7 +6,7 @@
 /*   By: jergashe <jergashe@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/15 12:01:37 by jergashe          #+#    #+#             */
-/*   Updated: 2023/01/26 08:27:40 by jergashe         ###   ########.fr       */
+/*   Updated: 2023/01/27 07:17:08 by jergashe         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,5 +107,6 @@ size_t		gn_strlen(const char *s);
 char		*gn_strjoin_free_1(char *s1, char *s2);
 char		*ft_strndup2(char *str, int start, int end);
 int			ft_sqrt(int num);
+int			ft_read_line(char **line);
 
 #endif
